@@ -1,0 +1,18 @@
+//서브페이지
+body.subpage{
+  main{
+    .container{
+      top: 220px;
+      p{ text-align: center;
+      }
+      .pinkcolor{
+        font-size: 20px; color: $fontColorPrimary;
+        font-weight: bold;
+      }
+      img{
+        position: absolute;
+        left: 16%;
+      }
+    }
+  }
+}

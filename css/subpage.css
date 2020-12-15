@@ -1,0 +1,8 @@
+body.subpage main .container p {
+  text-align: center;
+}
+
+body.subpage main .container img {
+  position: absolute;
+  left: 15%;
+}
