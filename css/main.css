@@ -1,9 +1,21 @@
-.mainbanner {
+#mainbanner {
   position: relative;
   top: 180px;
   height: 550px;
-  background: url("../img/main_banner.jpg") no-repeat;
   background-size: cover;
+}
+
+#mainbanner li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-display: block;
+}
+
+#mainbanner li img {
+  width: 1320px;
+  height: 550px;
 }
 
 .container {

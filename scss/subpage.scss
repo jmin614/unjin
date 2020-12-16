@@ -15,12 +15,16 @@ body.subpage{
           font-size: 20px; color: $fontColorPrimary;
           font-weight: bold;
         }
+        .story_text{ text-align: center; left: 45%; top: -1%; position: relative;
+          border: 1px dotted $fontColorPrimary; padding: 10px; width: 110px;
+        }
+
       }
 
 
     #look{
-      .container{ height: 1110px;
-      .look_list{ position: absolute; left: 10%;
+      .container{
+      .look_list{ position: absolute; left: 9%; top: 10%;
         padding: 20px; width: 315px; border: 1px dotted $fontColorPrimary;
         ul{
           display: inline-block; width: 100px;
@@ -31,11 +35,11 @@ body.subpage{
       }
       }
       .look_text{
-        position: absolute; top: 2%; left: 65%;
-        border: 1px dotted $fontColorPrimary; padding: 10px; width: 100px;
+        position: absolute; top: -1%; left: 45%;
+        border: 1px dotted $fontColorPrimary; padding: 10px; width: 110px;
       }
-      .img_box{ position: absolute; top: 8%; left: 40%;
-        img{width: 70%; height: 70%;
+      .img_box{ position: absolute; top: 8.8%; left: 40%;
+        img{width: 80%; height: 80%;
        }
       }
 
@@ -46,7 +50,7 @@ body.subpage{
   #dress, #outer{
     .dress_text{
       position: absolute; top: -1%; left: 45%;
-      border: 1px dotted $fontColorPrimary; padding: 10px; width: 100px;
+      border: 1px dotted $fontColorPrimary; padding: 10px; width: 110px;
     }
     .dress_list{
       height: 1100px;overflow-x:hidden; overflow-y:auto;
@@ -58,7 +62,11 @@ body.subpage{
         li{ padding: 10px; padding-bottom: 20px;
           img{
             width: 300px;
+            &:hover{
+              -webkit-transform:scale(1.1); transition: .2s;
+            }
           }
+
           p{ width: 300px; padding: 5px; box-sizing: border-box;
             overflow: hidden; text-align: center;
           }

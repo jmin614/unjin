@@ -79,7 +79,7 @@ a:hover {
 
 #wrap #header #top_logo {
   position: absolute;
-  left: 33%;
+  left: 32%;
   top: 15%;
 }
 
@@ -129,12 +129,24 @@ a:hover {
   color: #a83d4f;
 }
 
-.mainbanner {
+#mainbanner {
   position: relative;
   top: 180px;
   height: 550px;
-  background: url("../img/main_banner.jpg") no-repeat;
   background-size: cover;
+}
+
+#mainbanner li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-display: block;
+}
+
+#mainbanner li img {
+  width: 1320px;
+  height: 550px;
 }
 
 .container {
@@ -167,13 +179,20 @@ body.subpage main #story .pinkcolor {
   font-weight: bold;
 }
 
-body.subpage main #look .container {
-  height: 1110px;
+body.subpage main #story .story_text {
+  text-align: center;
+  left: 45%;
+  top: -1%;
+  position: relative;
+  border: 1px dotted #a83d4f;
+  padding: 10px;
+  width: 110px;
 }
 
 body.subpage main #look .container .look_list {
   position: absolute;
-  left: 10%;
+  left: 9%;
+  top: 10%;
   padding: 20px;
   width: 315px;
   border: 1px dotted #a83d4f;
@@ -193,22 +212,22 @@ body.subpage main #look .container .look_list ul li img {
 
 body.subpage main #look .container .look_text {
   position: absolute;
-  top: 2%;
-  left: 65%;
+  top: -1%;
+  left: 45%;
   border: 1px dotted #a83d4f;
   padding: 10px;
-  width: 100px;
+  width: 110px;
 }
 
 body.subpage main #look .container .img_box {
   position: absolute;
-  top: 8%;
+  top: 8.8%;
   left: 40%;
 }
 
 body.subpage main #look .container .img_box img {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
 }
 
 body.subpage main #dress .dress_text, body.subpage main #outer .dress_text {
@@ -217,7 +236,7 @@ body.subpage main #dress .dress_text, body.subpage main #outer .dress_text {
   left: 45%;
   border: 1px dotted #a83d4f;
   padding: 10px;
-  width: 100px;
+  width: 110px;
 }
 
 body.subpage main #dress .dress_list, body.subpage main #outer .dress_list {
@@ -240,6 +259,11 @@ body.subpage main #dress .dress_list ul li, body.subpage main #outer .dress_list
 
 body.subpage main #dress .dress_list ul li img, body.subpage main #outer .dress_list ul li img {
   width: 300px;
+}
+
+body.subpage main #dress .dress_list ul li img:hover, body.subpage main #outer .dress_list ul li img:hover {
+  -webkit-transform: scale(1.1);
+  transition: .2s;
 }
 
 body.subpage main #dress .dress_list ul li p, body.subpage main #outer .dress_list ul li p {
