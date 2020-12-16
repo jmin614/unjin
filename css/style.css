@@ -210,3 +210,42 @@ body.subpage main #look .container .img_box img {
   width: 70%;
   height: 70%;
 }
+
+body.subpage main #dress .dress_text, body.subpage main #outer .dress_text {
+  position: absolute;
+  top: -1%;
+  left: 45%;
+  border: 1px dotted #a83d4f;
+  padding: 10px;
+  width: 100px;
+}
+
+body.subpage main #dress .dress_list, body.subpage main #outer .dress_list {
+  height: 1100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 8%;
+}
+
+body.subpage main #dress .dress_list ul, body.subpage main #outer .dress_list ul {
+  display: flex;
+  padding-left: 20px;
+}
+
+body.subpage main #dress .dress_list ul li, body.subpage main #outer .dress_list ul li {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+body.subpage main #dress .dress_list ul li img, body.subpage main #outer .dress_list ul li img {
+  width: 300px;
+}
+
+body.subpage main #dress .dress_list ul li p, body.subpage main #outer .dress_list ul li p {
+  width: 300px;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}

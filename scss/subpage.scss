@@ -42,5 +42,31 @@ body.subpage{
     }
 
   }
+
+  #dress, #outer{
+    .dress_text{
+      position: absolute; top: -1%; left: 45%;
+      border: 1px dotted $fontColorPrimary; padding: 10px; width: 100px;
+    }
+    .dress_list{
+      height: 1100px;overflow-x:hidden; overflow-y:auto;
+      position: absolute;top: 8%;
+
+      ul{
+        display: flex;
+        padding-left: 20px;
+        li{ padding: 10px; padding-bottom: 20px;
+          img{
+            width: 300px;
+          }
+          p{ width: 300px; padding: 5px; box-sizing: border-box;
+            overflow: hidden; text-align: center;
+          }
+        }
+
+      }
+    }
+
+  }
 }
 }
