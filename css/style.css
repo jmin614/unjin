@@ -156,13 +156,57 @@ body.subpage main .container p {
   text-align: center;
 }
 
-body.subpage main .container .pinkcolor {
+body.subpage main #story img {
+  position: absolute;
+  left: 16%;
+}
+
+body.subpage main #story .pinkcolor {
   font-size: 20px;
   color: #a83d4f;
   font-weight: bold;
 }
 
-body.subpage main .container img {
+body.subpage main #look .container {
+  height: 1110px;
+}
+
+body.subpage main #look .container .look_list {
   position: absolute;
-  left: 16%;
+  left: 10%;
+  padding: 20px;
+  width: 315px;
+  border: 1px dotted #a83d4f;
+}
+
+body.subpage main #look .container .look_list ul {
+  display: inline-block;
+  width: 100px;
+}
+
+body.subpage main #look .container .look_list ul li img {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+body.subpage main #look .container .look_text {
+  position: absolute;
+  top: 2%;
+  left: 65%;
+  border: 1px dotted #a83d4f;
+  padding: 10px;
+  width: 100px;
+}
+
+body.subpage main #look .container .img_box {
+  position: absolute;
+  top: 8%;
+  left: 40%;
+}
+
+body.subpage main #look .container .img_box img {
+  width: 70%;
+  height: 70%;
 }
