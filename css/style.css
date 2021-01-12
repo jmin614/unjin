@@ -122,8 +122,8 @@ a:hover {
 
 #wrap #footer {
   margin-top: 50px;
-  height: 80px;
-  line-height: 80px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   border-top: 1px solid #a83d4f;
   color: #a83d4f;
@@ -189,27 +189,6 @@ body.subpage main #story .story_text {
   width: 110px;
 }
 
-body.subpage main #look .container .look_list {
-  position: absolute;
-  left: 9%;
-  top: 10%;
-  padding: 20px;
-  width: 315px;
-  border: 1px dotted #a83d4f;
-}
-
-body.subpage main #look .container .look_list ul {
-  display: inline-block;
-  width: 100px;
-}
-
-body.subpage main #look .container .look_list ul li img {
-  width: 100px;
-  height: 100px;
-  padding: 0;
-  margin: 0;
-}
-
 body.subpage main #look .container .look_text {
   position: absolute;
   top: -1%;
@@ -219,15 +198,38 @@ body.subpage main #look .container .look_text {
   width: 110px;
 }
 
-body.subpage main #look .container .img_box {
-  position: absolute;
-  top: 8.8%;
-  left: 40%;
+body.subpage main #look .container .swiper-container {
+  width: 80%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 120px;
 }
 
-body.subpage main #look .container .img_box img {
+body.subpage main #look .container .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+body.subpage main #look .container .gallery-top {
+  height: 60%;
   width: 80%;
-  height: 80%;
+}
+
+body.subpage main #look .container .gallery-thumbs {
+  height: 5%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+body.subpage main #look .container .gallery-thumbs .swiper-slide {
+  width: 20%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+body.subpage main #look .container .gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
 }
 
 body.subpage main #dress .dress_text, body.subpage main #outer .dress_text {
@@ -240,9 +242,7 @@ body.subpage main #dress .dress_text, body.subpage main #outer .dress_text {
 }
 
 body.subpage main #dress .dress_list, body.subpage main #outer .dress_list {
-  height: 1100px;
-  overflow-x: hidden;
-  overflow-y: auto;
+  height: 100%;
   position: absolute;
   top: 8%;
 }

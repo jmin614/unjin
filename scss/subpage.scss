@@ -24,24 +24,38 @@ body.subpage{
 
     #look{
       .container{
-      .look_list{ position: absolute; left: 9%; top: 10%;
-        padding: 20px; width: 315px; border: 1px dotted $fontColorPrimary;
-        ul{
-          display: inline-block; width: 100px;
-          li{
-            img{ width: 100px; height: 100px; padding: 0; margin: 0;
-          }
+        .look_text{
+          position: absolute; top: -1%; left: 45%;
+          border: 1px dotted $fontColorPrimary; padding: 10px; width: 110px;
         }
-      }
-      }
-      .look_text{
-        position: absolute; top: -1%; left: 45%;
-        border: 1px dotted $fontColorPrimary; padding: 10px; width: 110px;
-      }
-      .img_box{ position: absolute; top: 8.8%; left: 40%;
-        img{width: 80%; height: 80%;
-       }
-      }
+        .swiper-container {
+          width: 80%;
+          height: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          top: 120px;
+        }
+        .swiper-slide {
+          background-size: cover;
+          background-position: center;
+        }
+        .gallery-top {
+          height: 60%;
+          width: 80%;
+        }
+        .gallery-thumbs {
+          height: 5%;
+          box-sizing: border-box;
+          padding: 10px 0;
+        }
+        .gallery-thumbs .swiper-slide {
+          width: 20%;
+          height: 100%;
+          opacity: 0.4;
+        }
+        .gallery-thumbs .swiper-slide-thumb-active {
+          opacity: 1;
+        }
 
     }
 
@@ -53,7 +67,7 @@ body.subpage{
       border: 1px dotted $fontColorPrimary; padding: 10px; width: 110px;
     }
     .dress_list{
-      height: 1100px;overflow-x:hidden; overflow-y:auto;
+      height: 100%;
       position: absolute;top: 8%;
 
       ul{
